@@ -102,6 +102,26 @@ function App() {
             tempPopup={tempPopup}
           />
 
+          {/* Controles táctiles grandes para móvil */}
+          <div className="touch-controls">
+            <button className="touch-button" onClick={moveLeft}>
+              ◀
+              <span>Izquierda</span>
+            </button>
+            <button className="touch-button" onClick={rotate}>
+              ⟳
+              <span>Girar</span>
+            </button>
+            <button className="touch-button" onClick={moveRight}>
+              ▶
+              <span>Derecha</span>
+            </button>
+            <button className="touch-button" onClick={hardDrop}>
+              ⬇
+              <span>Caída rápida</span>
+            </button>
+          </div>
+
           <section className="info-panel">
             <div className="info-card">
               <div className="info-item">
